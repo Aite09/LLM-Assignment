@@ -1,7 +1,8 @@
-#!/usr/bin/env python3
+#app.py
+
 """
 ExplainIt-3x: Multi-level explanation generator
-Simple LLM app for course assignment
+Simple LLM app  
 """
 
 import os
@@ -20,7 +21,7 @@ import requests
 load_dotenv()
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
+OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions?ipv4=true"
 
 # System prompt with rules
 SYSTEM_PROMPT = """You are ExplainIt-3x, an educational assistant.
@@ -36,18 +37,18 @@ Rules:
 
 Format like this:
 
-📚 TOPIC: [topic name]
+ TOPIC: [topic name]
 
-🧒 FOR A 10-YEAR-OLD:
+ FOR A 10-YEAR-OLD:
 [simple explanation with analogies]
 
-👤 FOR AN ADULT:
+ FOR AN ADULT:
 [clear explanation]
 
-🎓 FOR A UNIVERSITY STUDENT:
+ FOR A UNIVERSITY STUDENT:
 [technical explanation]
 
-❓ QUESTION:
+ QUESTION:
 [one question to check understanding]"""
 
 
@@ -244,7 +245,7 @@ Commands:
   help             - Show this help
 
 How it works:
-  - Uses GPT-4o-mini to explain concepts at 3 levels
+  - Uses LLaMA 3.1 8B Instruct (via OpenRouter) to explain concepts at 3 levels
   - Blocks prompt injection attempts
   - Logs all requests with timestamps
   - Evaluates on 15 test cases
