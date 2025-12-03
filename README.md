@@ -140,4 +140,4 @@ A short recording demonstrating how to run the application, generate explanation
 
 Once the video is uploaded to GitHub, replace the placeholder link below with the actual video link:
 
-[Watch the demo](demo/demo.mp4)
+[Watch the demo]()
