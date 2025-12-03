@@ -136,8 +136,6 @@ The project uses the `meta-llama/llama-3.1-8b-instruct` model through the OpenRo
 
 ## Demo Recording
 
-A short recording demonstrating how to run the application, generate explanations, and execute the evaluation suite can be added here.
+A short demonstration recording has been submitted separately as part of the assignment.  
+The recording can be found in the GitHub repository.
 
-Once the video is uploaded to GitHub, replace the placeholder link below with the actual video link:
-
-[Watch the demo]()
